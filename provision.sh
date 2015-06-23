@@ -23,9 +23,15 @@ cp $BASE_DIR/addons/org.openhab.binding.mqttitude-1.7.0.jar $BASE_DIR/openhab/ad
 cp $BASE_DIR/addons/org.openhab.binding.xbmc-1.7.0.jar $BASE_DIR/openhab/addons
 cp $BASE_DIR/addons/org.openhab.binding.plex-1.7.0.jar $BASE_DIR/openhab/addons
 cp $BASE_DIR/addons/org.openhab.binding.sonos-1.7.0.jar $BASE_DIR/openhab/addons
+cp $BASE_DIR/addons/org.openhab.binding.ntp-1.7.0.jar $BASE_DIR/openhab/addons
+cp $BASE_DIR/addons/org.openhab.binding.http-1.7.0.jar $BASE_DIR/openhab/addons
+cp $BASE_DIR/addons/org.openhab.persistence.exec-1.7.0.jar $BASE_DIR/openhab/addons
+cp $BASE_DIR/addons/org.openhab.persistence.logging-1.7.0.jar $BASE_DIR/openhab/addons
+cp $BASE_DIR/addons/org.openhab.persistence.rrd4j-1.7.0.jar $BASE_DIR/openhab/addons
 
 echo "Link configuration"
-ln -s /openhab-config/ $BASE_DIR/openhab/configuration
+rm -rf $BASE_DIR/openhab/configurations
+ln -s /openhab-config/ $BASE_DIR/openhab/configurations
 
 echo "Cleanup"
 rm $BASE_DIR/openhab.zip
