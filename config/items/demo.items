@@ -126,6 +126,7 @@ Location DemoLocation			"Brandenburg Gate Berlin"
 
 /* Sonos */
 Switch Sonos_Kitchen_Play_Toggle        "Sonos"                         (gGFSonos)          {sonos="[ON:kitchen:play], [OFF:kitchen:pause]"}
+String Sonos_Kitchen_State              "Kitchen is plaing [%s]"        (gGFSonos)          {sonos="[kitchen:transportstate]"}
 String Sonos_Kitchen_Current_Title      "Kitchen current title [%s]"    (Sonos,Sonos)       {sonos="[kitchen:currenttitle]"}
 String Sonos_Kitchen_Current_Artist     "Kitchen current artist [%s]"   (Sonos,Sonos)       {sonos="[kitchen:currentartist]"}
 String Sonos_Kitchen_Current_Album      "Kitchen current album [%s]"    (Sonos,Sonos)       {sonos="[kitchen:currentalbum]"}

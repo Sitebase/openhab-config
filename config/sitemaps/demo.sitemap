@@ -25,6 +25,7 @@ sitemap demo label="Demo House"
 	}
 	Frame label="Date" {
 		Text item=Date
+        Text item=Sonos_Kitchen_State icon="sonos" label="State: [%s]"
         Text item=Sonos_Kitchen_Current_Title icon="sonos" label="Title: [%s]"
         Text item=Sonos_Kitchen_Current_Artist icon="sonos" label="Artist: [%s]"
         Text item=Sonos_Kitchen_Current_Album icon="sonos" label="Album: [%s]"
