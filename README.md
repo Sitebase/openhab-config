@@ -35,6 +35,12 @@ Test openhab command on the command line. In the window that is running `./start
 
     openhab send Sonos_GF_KitchenUID ON
 
+## Send email
+
+    logInfo("Email", "Send email to sitebase")
+    sendMail("wim@bubobox.com", "Low battery alert", "Hello world from openhab BALBLABLALBLALB")
+
+
 ## Troubleshoot
 
 I had a very hard time to get the Sonos binding to work. One of my  other bindings was giving an error and seemed to cause this problem. After solving the problem the Sonos binding worked first time.
