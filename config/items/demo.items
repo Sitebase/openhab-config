@@ -126,6 +126,7 @@ Location DemoLocation			"Brandenburg Gate Berlin"
 
 /* Sonos */
 Switch Sonos_GF_Kitchen          "Sonos" (gGFSonos) { sonos="[ON:kitchen:play], [OFF:kitchen:pause]" }
+Switch Sonos_GF_KitchenUID          "Sonos UID" (gGFSonos) { sonos="[ON:RINCON_B8E9378882A601400:play], [OFF:RINCON_B8E9378882A601400:pause]" }
 String Sonos_GF_Kitchen_TitleUID    "Current Title via UID" (gLivingRoom, Sonos) { sonos="[RINCON_B8E9378882A601400:currenttitle]" }
 String CurrentTrack          "CurrentTrack [%s]"    (Sonos,Sonos) {sonos="[RINCON_B8E9378882A601400:currenttrack]"}
 String Sonos_GF_Kitchen_Title    "Current Title" (gLivingRoom, Sonos) { sonos="[kitchen:currenttitle]" }
@@ -136,7 +137,7 @@ String Sonos_GF_Kitchen_Track    "Current Track" (gLivingRoom, Sonos) { sonos="[
 /* REGEX(.*?val"\:([\d]*).*)*/
 String blabla {mqtt="<[sitebase:state:state:JS(io_state_val.js)]"}
 Number Greenhouse_Light {mqtt="<[sitebase:state:state:JS(io_state_val0.js)]"}
-Number Greenhouse_Sensor_Temperature {mqtt="<[sitebase:/state/sensor:state:JS(io_state_sensor_temperature.js)]"}
+Number Greenhouse_Sensor_
 Number Greenhouse_Sensor_Humidity {mqtt="<[sitebase:/state/sensor:state:JS(io_state_sensor_humidity.js)]"}
 
 /* Piko PVR */

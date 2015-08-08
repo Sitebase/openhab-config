@@ -34,7 +34,8 @@ sitemap demo label="Demo House"
         Text item=Solar_Current label="Current solar power: [%s W]"
         Text item=Solar_Total_Energy label="Total energy: [%s kWh]"
         Text item=Solar_Daily_Energy label="Daily energy: [%s kWh]"
-        Switch item=Sonos_GF_Kitchen
+        Switch item=Sonos_GF_Kitchen icon="sonos"
+        Switch item=Sonos_GF_KitchenUID icon="sonos"
         Text item=Greenhouse_Light label="Greenhouse light: [%d]" valuecolor=[<300="green",>=300="orange",>600="red"]
         Text item=Greenhouse_Sensor_Temperature label="Greenhouse temperature: [%d °C]" valuecolor=[<18="red",>=18="green",>35="red"]
         Text item=Greenhouse_Sensor_Humidity label="Greenhouse humidity: [%d %%]" valuecolor=[<40="red",>=40="green",>75="red"]

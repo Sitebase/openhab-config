@@ -29,6 +29,16 @@ Show network traffic in wireshare:
 
 strange thing is that I see traffic when I use the Sonos controller on my laptop but nothing is showing up when openhab is supposed to be scanning for devices.
 
+## OSGI
+
+Test openhab command on the command line. In the window that is running `./start.sh` hit `enter` and now for example type this command:
+
+    openhab send Sonos_GF_KitchenUID ON
+
+## Troubleshoot
+
+I had a very hard time to get the Sonos binding to work. One of my  other bindings was giving an error and seemed to cause this problem. After solving the problem the Sonos binding worked first time.
+
 ## Todo
 
 * Solar bindings contain still a piece of HTML `<td width="70" align="right" bgcolor="#FFFFFF">19502` and therefor I must use a string for now instead of a number. We we switch to a number the value is not shown because of the HTML tag I think
