@@ -26,6 +26,8 @@ sitemap demo label="Demo House"
 	Frame label="Date" {
 		Text item=Date
         Text item=Sonos_Kitchen_Current_Title icon="sonos" label="Title: [%s]"
+        Text item=Sonos_Kitchen_Current_Artist icon="sonos" label="Artist: [%s]"
+        Text item=Sonos_Kitchen_Current_Album icon="sonos" label="Album: [%s]"
 		Switch item=Sonos_Kitchen_Play_Toggle icon="sonos"
         Text item=Solar_Current label="Current solar power: [%s W]"
         Text item=Solar_Total_Energy label="Total energy: [%s kWh]"

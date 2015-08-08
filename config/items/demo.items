@@ -125,9 +125,20 @@ Number NoOfPairedDevices "Paired Devices in Range: [%d]"  { bluetooth="!" }
 Location DemoLocation			"Brandenburg Gate Berlin"
 
 /* Sonos */
-Switch Sonos_Kitchen_Play_Toggle          "Sonos" (gGFSonos) { sonos="[ON:kitchen:play], [OFF:kitchen:pause]" }
-String Sonos_Kitchen_Current_Title          "Current title [%s]"    (Sonos,Sonos) {sonos="[kitchen:currenttitle]"}
+Switch Sonos_Kitchen_Play_Toggle        "Sonos"                         (gGFSonos)          {sonos="[ON:kitchen:play], [OFF:kitchen:pause]"}
+String Sonos_Kitchen_Current_Title      "Kitchen current title [%s]"    (Sonos,Sonos)       {sonos="[kitchen:currenttitle]"}
+String Sonos_Kitchen_Current_Artist     "Kitchen current artist [%s]"   (Sonos,Sonos)       {sonos="[kitchen:currentartist]"}
+String Sonos_Kitchen_Current_Album      "Kitchen current album [%s]"    (Sonos,Sonos)       {sonos="[kitchen:currentalbum]"}
 
+Switch Sonos_Living_Play_Toggle        "Sonos"                          (gGFSonos)          {sonos="[ON:living:play], [OFF:living:pause]"}
+String Sonos_Living_Current_Title      "Living current title [%s]"      (Sonos,Sonos)       {sonos="[living:currenttitle]"}
+String Sonos_Living_Current_Artist     "Living current artist [%s]"     (Sonos,Sonos)       {sonos="[living:currentartist]"}
+String Sonos_Living_Current_Album      "Living current album [%s]"      (Sonos,Sonos)       {sonos="[living:currentalbum]"}
+
+Switch Sonos_Bedroom_Play_Toggle        "Sonos"                         (gGFSonos)          {sonos="[ON:bedroom:play], [OFF:bedroom:pause]"}
+String Sonos_Bedroom_Current_Title      "Bedroom current title [%s]"    (Sonos,Sonos)       {sonos="[bedroom:currenttitle]"}
+String Sonos_Bedroom_Current_Artist     "Bedroom current artist [%s]"   (Sonos,Sonos)       {sonos="[bedroom:currentartist]"}
+String Sonos_Bedroom_Current_Album      "Bedroom current album [%s]"    (Sonos,Sonos)       {sonos="[bedroom:currentalbum]"}
 
 /* JSONPATH($.val)*/
 /*
