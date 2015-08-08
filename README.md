@@ -17,3 +17,6 @@ after the box is setup you can access it by browsing to:
 
 [View OpenHAB](http://192.168.1.117:8080/openhab.app?sitemap=demo)
 
+## Todo
+
+* Solar bindings contain still a piece of HTML `<td width="70" align="right" bgcolor="#FFFFFF">19502` and therefor I must use a string for now instead of a number. We we switch to a number the value is not shown because of the HTML tag I think

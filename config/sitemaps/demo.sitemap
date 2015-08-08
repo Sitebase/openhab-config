@@ -30,7 +30,9 @@ sitemap demo label="Demo House"
         Text item=Sonos_GF_Living_Title label="Titel: [%s]"
         Text item=Sonos_GF_Living_Radio label="Radio: [%s]"
         Text item=blabla label="BLabla: [%s]"
-        Text item=Solar_Current label="Current solar power: [%s]"
+        Text item=Solar_Current label="Current solar power: [%s W]"
+        Text item=Solar_Total_Energy label="Total energy: [%s kWh]"
+        Text item=Solar_Daily_Energy label="Daily energy: [%s kWh]"
         Switch item=Sonos_GF_Living
         Text item=Greenhouse_Light label="Greenhouse light: [%d]" valuecolor=[<300="green",>=300="orange",>600="red"]
         Text item=Greenhouse_Sensor_Temperature label="Greenhouse temperature: [%d °C]" valuecolor=[<18="red",>=18="green",>35="red"]

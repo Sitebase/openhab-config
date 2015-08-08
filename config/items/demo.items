@@ -140,4 +140,6 @@ Number Greenhouse_Sensor_Humidity {mqtt="<[sitebase:/state/sensor:state:JS(io_st
 
 /* Piko PVR */
 /*      .*?current<\/td>\n<td .*>\n  (\d)    */
-String Solar_Current "current [%.0f W]" { http="<[http://pvserver:pvwr@192.168.1.127/index.fhtml:60000:REGEX(.*?current</td>\\s.*?\\s(.*?)</td>.*)]" }
+String Solar_Current "Solar current power [%.0f W]" { http="<[http://pvserver:pvwr@192.168.1.127/index.fhtml:60000:REGEX(.*?current</td>\\s.*?\\s(.*?)</td>.*)]" }
+String Solar_Total_Energy "Solar total energy [%.0f kWh]" { http="<[http://pvserver:pvwr@192.168.1.127/index.fhtml:60000:REGEX(.*?total energy</td>\\s.*?\\s(.*?)</td>.*)]" }
+String Solar_Daily_Energy "Solar daily energy [%.0f kWh]" { http="<[http://pvserver:pvwr@192.168.1.127/index.fhtml:60000:REGEX(.*?daily energy</td>\\s.*?\\s(.*?)</td>.*)]" }
