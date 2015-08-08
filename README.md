@@ -13,3 +13,7 @@ after the box is setup you can access it by browsing to:
 
     http://localhost:8888/openhab.app?sitemap=demo
 
+## Production
+
+[View OpenHAB](http://192.168.1.117:8080/openhab.app?sitemap=demo)
+

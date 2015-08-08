@@ -5,7 +5,7 @@ sitemap demo label="Demo House"
 		Group item=gGF label="Ground Floor" icon="groundfloor"
 		Group item=gC label="Cellar" icon="cellar"
         Group item=Outdoor icon="garden"
-		Group item=Greenhouse icon="lock"
+		Group item=Greenhouseke icon="lock"
 	}
 	Frame label="Weather" {
 		Text item=Weather_Temperature valuecolor=[Weather_LastUpdate=="Uninitialized"="lightgray",Weather_LastUpdate>90="lightgray",>25="orange",>15="green",>5="orange",<=5="blue"] {
@@ -26,10 +26,11 @@ sitemap demo label="Demo House"
 	}
 	Frame label="Date" {
 		Text item=Date
-        Text item=Sonos_GF_Living_Track label="Track: [%s]"
+        Text item=Sonos_GF_Living_Track label="Track BLA: [%s]"
         Text item=Sonos_GF_Living_Title label="Titel: [%s]"
         Text item=Sonos_GF_Living_Radio label="Radio: [%s]"
         Text item=blabla label="BLabla: [%s]"
+        Text item=Solar_Current label="Current solar power: [%s]"
         Switch item=Sonos_GF_Living
         Text item=Greenhouse_Light label="Greenhouse light: [%d]" valuecolor=[<300="green",>=300="orange",>600="red"]
         Text item=Greenhouse_Sensor_Temperature label="Greenhouse temperature: [%d °C]" valuecolor=[<18="red",>=18="green",>35="red"]
