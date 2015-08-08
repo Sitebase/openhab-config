@@ -30,10 +30,10 @@ sitemap demo label="Demo House"
         Text item=Sonos_Kitchen_Current_Artist icon="sonos" label="Artist: [%s]"
         Text item=Sonos_Kitchen_Current_Album icon="sonos" label="Album: [%s]"
 		Switch item=Sonos_Kitchen_Play_Toggle icon="sonos"
-        Text item=Solar_Current label="Current solar power: [%s W]"
-        Text item=Solar_Total_Energy label="Total energy: [%s kWh]"
+        Text item=Solar_Current label="Current solar power: [%d W]"
+        Text item=Solar_Total_Energy label="Total energy: [%d kWh]"
         Text item=Solar_Daily_Energy label="Daily energy: [%s kWh]"
-        Text item=Solar_Daily_Income label="Daily income: [%d €]"
+        Text item=Solar_Daily_Income label="Daily income: [%.2f €]"
         Chart item=Solar_Current period=D refresh=30000
 	}
 	Frame label="Demo" {
