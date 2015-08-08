@@ -33,6 +33,7 @@ sitemap demo label="Demo House"
         Text item=Solar_Current label="Current solar power: [%s W]"
         Text item=Solar_Total_Energy label="Total energy: [%s kWh]"
         Text item=Solar_Daily_Energy label="Daily energy: [%s kWh]"
+        Text item=Solar_Daily_Income label="Daily income: [%d €]"
         Chart item=Solar_Current period=D refresh=30000
 	}
 	Frame label="Demo" {

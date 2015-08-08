@@ -1,0 +1,9 @@
+rule "calculate based on the current daily power how much we earned in solar energy today"
+when
+    Item Solar_Daily_Energy changed
+then
+    var Number income
+    var Number power = Solar_Daily_Energy.state as DecimalType
+    income = power * 2
+    Solar_Daily_Income.postUpdate(income);
+end
