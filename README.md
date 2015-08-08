@@ -17,6 +17,20 @@ after the box is setup you can access it by browsing to:
 
 [View OpenHAB](http://192.168.1.117:8080/openhab.app?sitemap=demo)
 
+## Sonos configuration
+
+View info about all sonos players:
+
+    http://192.168.1.135:1400/status/topology
+
+Show network traffic in wireshare:
+
+    tcp.port == 1400 && http
+
+strange thing is that I see traffic when I use the Sonos controller on my laptop but nothing is showing up when openhab is supposed to be scanning for devices.
+
 ## Todo
 
 * Solar bindings contain still a piece of HTML `<td width="70" align="right" bgcolor="#FFFFFF">19502` and therefor I must use a string for now instead of a number. We we switch to a number the value is not shown because of the HTML tag I think
+* Manually placed `http://192.168.1.135:1400/img/icon-S1.png` in `openhab/webapps/images` so I can use it as a Icon
+* Sonos not working, is it possible that this is because UPNP is disabled?

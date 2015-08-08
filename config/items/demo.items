@@ -125,10 +125,11 @@ Number NoOfPairedDevices "Paired Devices in Range: [%d]"  { bluetooth="!" }
 Location DemoLocation			"Brandenburg Gate Berlin"
 
 /* Sonos */
-Switch Sonos_GF_Living          "Sonos" (gGFSonos) { sonos="[ON:living:play], [OFF:living:pause]" }
-String Sonos_GF_Living_Title    <video> () { sonos="[living:currenttitle]" }
-String Sonos_GF_Living_Track    <video> () { sonos="[living:currenttrack]" }
-String Sonos_GF_Living_Radio    <video> () { sonos="[living:radio]" }
+Switch Sonos_GF_Kitchen          "Sonos" (gGFSonos) { sonos="[ON:kitchen:play], [OFF:kitchen:pause]" }
+String Sonos_GF_Kitchen_TitleUID    "Current Title via UID" (gLivingRoom, Sonos) { sonos="[RINCON_B8E9378882A601400:currenttitle]" }
+String CurrentTrack          "CurrentTrack [%s]"    (Sonos,Sonos) {sonos="[RINCON_B8E9378882A601400:currenttrack]"}
+String Sonos_GF_Kitchen_Title    "Current Title" (gLivingRoom, Sonos) { sonos="[kitchen:currenttitle]" }
+String Sonos_GF_Kitchen_Track    "Current Track" (gLivingRoom, Sonos) { sonos="[kitchen:currenttrack]" }
 
 
 /* JSONPATH($.val)*/
