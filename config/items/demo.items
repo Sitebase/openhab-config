@@ -130,11 +130,12 @@ String Sonos_Kitchen_Current_Title          "Current title [%s]"    (Sonos,Sonos
 
 
 /* JSONPATH($.val)*/
-/* REGEX(.*?val"\:([\d]*).*)*/
+/*
 String blabla {mqtt="<[sitebase:state:state:JS(io_state_val.js)]"}
 Number Greenhouse_Light {mqtt="<[sitebase:state:state:JS(io_state_val0.js)]"}
 Number Greenhouse_Sensor_
 Number Greenhouse_Sensor_Humidity {mqtt="<[sitebase:/state/sensor:state:JS(io_state_sensor_humidity.js)]"}
+*/
 
 /* Piko PVR */
 /*      .*?current<\/td>\n<td .*>\n  (\d)    */

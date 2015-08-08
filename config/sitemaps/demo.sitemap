@@ -5,7 +5,6 @@ sitemap demo label="Demo House"
 		Group item=gGF label="Ground Floor" icon="groundfloor"
 		Group item=gC label="Cellar" icon="cellar"
         Group item=Outdoor icon="garden"
-		Group item=Greenhouseke icon="lock"
 	}
 	Frame label="Weather" {
 		Text item=Weather_Temperature valuecolor=[Weather_LastUpdate=="Uninitialized"="lightgray",Weather_LastUpdate>90="lightgray",>25="orange",>15="green",>5="orange",<=5="blue"] {
@@ -31,10 +30,7 @@ sitemap demo label="Demo House"
         Text item=Solar_Current label="Current solar power: [%s W]"
         Text item=Solar_Total_Energy label="Total energy: [%s kWh]"
         Text item=Solar_Daily_Energy label="Daily energy: [%s kWh]"
-        Text item=Greenhouse_Light label="Greenhouse light: [%d]" valuecolor=[<300="green",>=300="orange",>600="red"]
-        Text item=Greenhouse_Sensor_Temperature label="Greenhouse temperature: [%d °C]" valuecolor=[<18="red",>=18="green",>35="red"]
-        Text item=Greenhouse_Sensor_Humidity label="Greenhouse humidity: [%d %%]" valuecolor=[<40="red",>=40="green",>75="red"]
-        Chart item=Greenhouse_Light period=m refresh=30000
+        Chart item=Solar_Current period=m refresh=30000
 	}
 	Frame label="Demo" {
 		Text label="Group Demo" icon="firstfloor" {
