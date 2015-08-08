@@ -45,3 +45,4 @@ I had a very hard time to get the Sonos binding to work. One of my  other bindin
 * Manually placed `http://192.168.1.135:1400/img/icon-S1.png` in `openhab/webapps/images` so I can use it as a Icon
 * Sonos not working, is it possible that this is because UPNP is disabled?
 * For calculate rule to work we first need to fix the solar bindings HTML problem
+* Test email sendMail("wim@sitebase.be", "Low battery alert", "Hello world from openhab")
