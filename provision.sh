@@ -19,6 +19,7 @@ unzip $BASE_DIR/addons.zip -d $BASE_DIR/addons
 
 echo "Install addons"
 cp $BASE_DIR/addons/org.openhab.action.mail-1.7.0.jar $BASE_DIR/openhab/addons
+cp $BASE_DIR/addons/org.openhab.binding.exec-1.7.0.jar $BASE_DIR/openhab/addons
 cp $BASE_DIR/addons/org.openhab.binding.mqtt-1.7.0.jar $BASE_DIR/openhab/addons
 cp $BASE_DIR/addons/org.openhab.binding.mqttitude-1.7.0.jar $BASE_DIR/openhab/addons
 cp $BASE_DIR/addons/org.openhab.binding.xbmc-1.7.0.jar $BASE_DIR/openhab/addons

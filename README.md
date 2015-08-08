@@ -40,6 +40,30 @@ Test openhab command on the command line. In the window that is running `./start
     logInfo("Email", "Send email to sitebase")
     sendMail("wim@bubobox.com", "Low battery alert", "Hello world from openhab BALBLABLALBLALB")
 
+## Popcorn time
+
+Movie info
+
+    curl 'http://192.168.1.119:8008/' -H 'Authorization: cG9wY29ybjpwb3Bjb3Ju' --data '{"id":96,"method":"getplaying","jsonrpc":"2.0","params":[]}'
+
+Toggle play
+
+    curl 'http://192.168.1.119:8008/' -H 'Authorization: cG9wY29ybjpwb3Bjb3Ju' --data '{"id":30,"method":"toggleplaying","jsonrpc":"2.0","params":[]}'
+
+## Rest API
+
+Accessing REST API via cURL. cURL is useful on shell scripts (Win/Linux/OS X) or e.g. on Automator (OS X).
+
+Get state of an item:
+
+curl http://192.168.100.21:8080/rest/items/MyLight/state
+Set state of an item:
+
+curl --header "Content-Type: text/plain" --request PUT --data "OFF" http://192.168.100.21:8080/rest/items/MyLight/state
+Send command to an item:
+
+curl --header "Content-Type: text/plain" --request POST --data "ON" http://192.168.100.21:8080/rest/items/MyLight
+
 
 ## Troubleshoot
 
