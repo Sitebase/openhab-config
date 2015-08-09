@@ -1,0 +1,35 @@
+/* Rooms and locations */
+Group Room
+Group Upstairs
+Group Downstairs
+Group Basement
+Group Attic
+Group Garden
+Group Toilet
+Group Living            "Living"            <video>     (Room, Downstairs)
+Group Kitchen           "Kitchen"           <kitchen>   (Room, Downstairs)
+Group Office            "Office"            <office>    (Room, Downstairs)
+Group Laundry           "Laundry"           <bath>      (Room, Downstairs)
+Group Toilet1           "Main toilet"       <bath>      (Room, Downstairs, Toilet)
+Group Bath              "Bath"              <bath>      (Room, Upstairs)
+Group Toilet2           "Extra toilet"      <bath>      (Room, Upstairs, Toilet)
+
+/* Multimedia configuration */
+Group Media
+
+Group Sound
+Group SoundKitchen      "Kitchen sound"     <audio>     (Sound, Media)
+Group SoundLiving       "Living sound"      <audio>     (Sound, Media)
+Group SoundBedroom      "Bedroom sound"     <audio>     (Sound, Media)
+
+Group Video
+Group VideoLiving       "Living video"      <video>     (Video, Media)
+
+/* Lights */
+Group Lights
+Group LightsLiving      "Living room"       <light-on>     (Lights)
+Group LightsOffice      "Office"            <light-on>     (Lights, LightsLiving)
+Group LightsKitchen     "Kitchen"           <light-on>     (Lights)
+
+/* Energy */
+Group Solar
