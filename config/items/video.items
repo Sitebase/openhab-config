@@ -1,0 +1,2 @@
+/* Popcorn Time */
+Switch Popcorn_Living_Play_Toggle2 "Toggle play of living" { exec=">[*:/bin/sh ./configurations/scripts/popcorn-toggle.sh]" }

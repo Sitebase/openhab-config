@@ -1,5 +1,11 @@
 sitemap demo label="Home"
 {
+	Frame {
+		Group item=Audio
+		Group item=Living
+		Group item=Kitchen
+		Group item=Bedroom1
+	}
 	Frame label="General" {
         Text item=Sonos_Kitchen_State icon="sonos" label="State: [%s]"
         Text item=Sonos_Kitchen_Current_Title icon="sonos" label="Title: [%s]"
