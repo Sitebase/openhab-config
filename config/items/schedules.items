@@ -1,0 +1,7 @@
+// 15 minute before sunrise
+Switch Sunrise_Event {astro="planet=sun, type=rise, property=start, offset=-15"}
+DateTime Sunrise_Time  "Zonsopgang [%1$tH:%1$tM]" <sun> (Weather_astro) {astro="planet=sun, type=rise, property=start"}
+
+// 15 minute before sunset
+Switch Sunset_Event  {astro="planet=sun, type=rise, property=end, offset=-15"}
+DateTime Sunset_Time   "Zonsondergang [%1$tH:%1$tM]" <moon> (Weather_astro)  {astro="planet=sun, type=set, property=end"}

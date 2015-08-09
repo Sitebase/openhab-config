@@ -19,4 +19,11 @@ sitemap demo label="Home"
         Text item=Solar_Daily_Income label="Daily income: [%.2f €]"
         Chart item=Solar_Current period=D refresh=30000
 	}
+
+	Frame label="Sun" {
+		Switch item=Sunrise_Event icon="sun"
+		Text item=Sunrise_Time
+		Switch item=Sunset_Event icon="sun"
+		Text item=Sunset_Time
+	}
 }
