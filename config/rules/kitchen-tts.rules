@@ -1,0 +1,15 @@
+/**
+ * @example
+ * sendCommand("Sonos_Kitchen_TTS", "Hello world");
+ */
+
+rule Kitchen_tts
+when
+	Item Sonos_Kitchen_TTS received command
+then
+	var String text = Sonos_Kitchen_TTS.state.toString
+	logInfo("sonos-kitchen-tts", text);
+	/* save sonos state */
+	sendCommand("Sonos_Kitchen_PlayUri" , "x-rincon-mp3radio://translate.google.com/translate_tts?tl=en&q=" + text.encode("UTF-8") + "&ie=UTF-8&total=1&idx=0&client=t")
+	/* restore sonos state */
+end
