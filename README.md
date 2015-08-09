@@ -71,8 +71,4 @@ I had a very hard time to get the Sonos binding to work. One of my  other bindin
 
 ## Todo
 
-* Solar bindings contain still a piece of HTML `<td width="70" align="right" bgcolor="#FFFFFF">19502` and therefor I must use a string for now instead of a number. We we switch to a number the value is not shown because of the HTML tag I think
-* Manually placed `http://192.168.1.135:1400/img/icon-S1.png` in `openhab/webapps/images` so I can use it as a Icon
-* Sonos not working, is it possible that this is because UPNP is disabled?
-* For calculate rule to work we first need to fix the solar bindings HTML problem
-* Test email sendMail("wim@sitebase.be", "Low battery alert", "Hello world from openhab")
+* if PVR current solar is null it will start to use the total energy number
