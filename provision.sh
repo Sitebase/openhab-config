@@ -30,6 +30,7 @@ cp $BASE_DIR/addons/org.openhab.binding.sonos-1.7.0.jar $BASE_DIR/openhab/addons
 cp $BASE_DIR/addons/org.openhab.binding.ntp-1.7.0.jar $BASE_DIR/openhab/addons
 cp $BASE_DIR/addons/org.openhab.binding.http-1.7.0.jar $BASE_DIR/openhab/addons
 cp $BASE_DIR/addons/org.openhab.binding.networkhealth-1.7.0.jar $BASE_DIR/openhab/addons
+cp $BASE_DIR/addons/org.openhab.binding.hue-1.7.0.jar $BASE_DIR/openhab/addons
 cp $BASE_DIR/addons/org.openhab.persistence.exec-1.7.0.jar $BASE_DIR/openhab/addons
 cp $BASE_DIR/addons/org.openhab.persistence.logging-1.7.0.jar $BASE_DIR/openhab/addons
 cp $BASE_DIR/addons/org.openhab.persistence.rrd4j-1.7.0.jar $BASE_DIR/openhab/addons
