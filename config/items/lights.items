@@ -10,5 +10,5 @@ Dimmer Hue_Living_Corner_Temperature    "Living corner"                       (L
 
 Switch Hue_Bedroom                      "Master bedroom"                      (Light, Bedroom1)                          {hue="3"}
 Color Hue_Bedroom_Color                 "Master bedroom"                      (Light, Bedroom1)                          {hue="3"}
-Dimmer Hue_Bedroom_Dimmer               "Master bedroom"                      (Light, Living)                            {hue="3;brightness;20"}
-Dimmer Hue_Bedroom_Temperature          "Master bedroom"                      (Light, Living)                            {hue="3;colorTemperatur
+Dimmer Hue_Bedroom_Dimmer               "Master bedroom"                      (Light, Bedroom1)                          {hue="3;brightness;20"}
+Dimmer Hue_Bedroom_Temperature          "Master bedroom"                      (Light, Bedroom1)                          {hue="3;colorTemperatur

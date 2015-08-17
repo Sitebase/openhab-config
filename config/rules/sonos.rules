@@ -1,0 +1,38 @@
+// auto update sonos switches if the state of one of the speakers
+// is externally changed (from the official app or via the buttons on the speaker)
+
+rule "Sonos kitchen sync"
+when
+	Item Sonos_Kitchen_State changed
+then
+    if(Sonos_Kitchen_State.state=="PAUSED_PLAYBACK") {
+        sendCommand(Sonos_Kitchen_Play_Toggle, OFF)
+    }
+    if(Sonos_Kitchen_State.state=="PLAYING") {
+        sendCommand(Sonos_Kitchen_Play_Toggle, ON)
+    }
+end
+
+rule "Sonos living sync"
+when
+	Item Sonos_Living_State changed
+then
+    if(Sonos_Living_State.state=="PAUSED_PLAYBACK") {
+        sendCommand(Sonos_Living_Play_Toggle, OFF)
+    }
+    if(Sonos_Living_State.state=="PLAYING") {
+        sendCommand(Sonos_Living_Play_Toggle, ON)
+    }
+end
+
+rule "Sonos bedroom sync"
+when
+	Item Sonos_Bedroom_State changed
+then
+    if(Sonos_Bedroom_State.state=="PAUSED_PLAYBACK") {
+        sendCommand(Sonos_Bedroom_Play_Toggle, OFF)
+    }
+    if(Sonos_Bedroom_State.state=="PLAYING") {
+        sendCommand(Sonos_Bedroom_Play_Toggle, ON)
+    }
+end
