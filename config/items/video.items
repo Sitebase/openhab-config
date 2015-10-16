@@ -3,4 +3,4 @@ Switch Popcorn_Living_Play_Toggle2 "Toggle play of living" { exec=">[*:/bin/sh .
 
 // the shell script will update the switch using the rest API
 // because the input doesn't seem to work
-Switch Popcorn_Living_Movie "Living watching video" { exec="<[/bin/sh@@-c@@./configurations/scripts/popcorn-updateplaying.sh:5000:REGEX((.*?))]" }
+//Switch Popcorn_Living_Movie "Living watching video" { exec="<[/bin/sh@@-c@@./configurations/scripts/popcorn-updateplaying.sh:5000:REGEX((.*?))]" }
