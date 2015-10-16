@@ -12,3 +12,5 @@ Switch Hue_Bedroom                      "Master bedroom"                      (L
 Color Hue_Bedroom_Color                 "Master bedroom"                      (Light, Bedroom1)                          {hue="3"}
 Dimmer Hue_Bedroom_Dimmer               "Master bedroom"                      (Light, Bedroom1)                          {hue="3;brightness;20"}
 Dimmer Hue_Bedroom_Temperature          "Master bedroom"                      (Light, Bedroom1)                          {hue="3;colorTemperatur
+
+Switch Door                             "Door bell                            (Light, Living)                            {mqtt="<[sitebase:/myHome/doorbell:command:ON]"}
