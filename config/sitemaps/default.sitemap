@@ -7,14 +7,10 @@ sitemap demo label="Home"
 		Group item=Bedroom1
 	}
 	Frame label="General" {
-        Text item=Sonos_Kitchen_Current_Title icon="sonos" label="Title: [%s]"
-        Text item=Sonos_Kitchen_State icon="sonos" label="State: [%s]"
-        Text item=Sonos_Kitchen_Current_Artist icon="sonos" label="Artist: [%s]"
-        Text item=Sonos_Kitchen_Current_Album icon="sonos" label="Album: [%s]"
-		Switch item=Sonos_Kitchen_Play_Toggle icon="sonos"
 		Switch item=Popcorn_Living_Play_Toggle2 icon="video"
 		Switch item=Popcorn_Living_Movie icon="video"
 		Switch item=Door
+		Switch item=kLivingCirkelLichtReserveKnop3
         Text item=Solar_Current label="Current solar power: [%d W]"
         Text item=Solar_Total_Energy label="Total energy: [%d kWh]"
         Text item=Solar_Daily_Energy label="Daily energy: [%s kWh]"

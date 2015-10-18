@@ -72,3 +72,6 @@ I had a very hard time to get the Sonos binding to work. One of my  other bindin
 ## Todo
 
 * if PVR current solar is null it will start to use the total energy number
+
+//Switch LivingLight "Living light" { exec=">[*:/bin/sh ./configurations/scripts/ads-pulse.sh .cToggleOfficeLight]" }
+//Switch LivingLight2 {mqtt=">[sitebase:bla:command:ON:1],>[sitebase:bla:command:OFF:0]"}

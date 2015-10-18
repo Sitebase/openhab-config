@@ -1,0 +1,17 @@
+Switch Hue_Living_Seat                  "Living seat"                         (Light, Living)                            {hue="2"}
+Color  Hue_Living_Seat_Color            "Living seat"                         (Light, Living)                            {hue="2"}
+Dimmer Hue_Living_Seat_Dimmer           "Living seat"                         (Light, Living)                            {hue="2;brightness;20"}
+Dimmer Hue_Living_Seat_Temperature      "Living seat"                         (Light, Living)                            {hue="2;colorTemperature;20"}
+
+Switch Hue_Living_Corner                "Living corner"                       (Light, Living)                            {hue="1"}
+Color  Hue_Living_Corner_Color          "Living corner"                       (Light, Living)                            {hue="1"}
+Dimmer Hue_Living_Corner_Dimmer         "Living corner"                       (Light, Living)                            {hue="1;brightness;20"}
+Dimmer Hue_Living_Corner_Temperature    "Living corner"                       (Light, Living)                            {hue="1;colorTemperature;20"}
+
+Switch Hue_Bedroom                      "Master bedroom"                      (Light, Bedroom1)                          {hue="3"}
+Color Hue_Bedroom_Color                 "Master bedroom"                      (Light, Bedroom1)                          {hue="3"}
+Dimmer Hue_Bedroom_Dimmer               "Master bedroom"                      (Light, Bedroom1)                          {hue="3;brightness;20"}
+Dimmer Hue_Bedroom_Temperature          "Master bedroom"                      (Light, Bedroom1)                          {hue="3;colorTemperatur
+
+Switch Door                             "Door bell                            (Light, Living)                            {mqtt="<[sitebase:/myHome/doorbell:command:ON]"}
+Switch kLivingCirkelLichtReserveKnop3 "Morning"

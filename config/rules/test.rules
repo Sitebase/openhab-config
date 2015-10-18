@@ -1,0 +1,8 @@
+import org.openhab.core.library.types.*
+
+rule "balblabal"
+when
+    Item Door changed
+then
+    logInfo("door changed state");
+end

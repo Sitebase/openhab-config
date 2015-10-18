@@ -1,0 +1,20 @@
+/* Sonos */
+Switch Sonos_Kitchen_Play_Toggle        "Sonos Kitchen"                 (Audio, Sonos, AudioKitchen, Kitchen)       {sonos="[ON:kitchen:play], [OFF:kitchen:pause]"}
+String Sonos_Kitchen_State              "Kitchen is playing [%s]"       (Audio, Sonos, AudioKitchen, Kitchen)       {sonos="[kitchen:transportstate]"}
+String Sonos_Kitchen_Current_Title      "Kitchen current title [%s]"    (Audio, Sonos, AudioKitchen, Kitchen)       {sonos="[kitchen:currenttitle]"}
+String Sonos_Kitchen_Current_Artist     "Kitchen current artist [%s]"   (Audio, Sonos, AudioKitchen, Kitchen)       {sonos="[kitchen:currentartist]"}
+String Sonos_Kitchen_Current_Album      "Kitchen current album [%s]"    (Audio, Sonos, AudioKitchen, Kitchen)       {sonos="[kitchen:currentalbum]"}
+String Sonos_Kitchen_PlayUri                                            (Audio, Sonos, AudioKitchen, Kitchen)       {sonos="[kitchen:playuri]"}
+String Sonos_Kitchen_TTS                                                (Audio, Sonos, AudioKitchen, Kitchen)
+
+Switch Sonos_Living_Play_Toggle        "Sonos Living"                   (Audio, Sonos, AudioLiving, Living)        {sonos="[ON:living:play], [OFF:living:pause]"}
+String Sonos_Living_State              "Living is playing [%s]"         (Audio, Sonos, AudioLiving, Living)        {sonos="[living:transportstate]"}
+String Sonos_Living_Current_Title      "Living current title [%s]"      (Audio, Sonos, AudioLiving, Living)        {sonos="[living:currenttitle]"}
+String Sonos_Living_Current_Artist     "Living current artist [%s]"     (Audio, Sonos, AudioLiving, Living)        {sonos="[living:currentartist]"}
+String Sonos_Living_Current_Album      "Living current album [%s]"      (Audio, Sonos, AudioLiving, Living)        {sonos="[living:currentalbum]"}
+
+Switch Sonos_Bedroom_Play_Toggle        "Sonos Bedroom"                 (Audio, Sonos, AudioBedroom, Bedroom, Bedroom1)       {sonos="[ON:bedroom:play], [OFF:bedroom:pause]"}
+String Sonos_Bedroom_State              "Bedroom is playing [%s]"       (Audio, Sonos, AudioBedroom, Bedroom, Bedroom1)       {sonos="[bedroom:transportstate]"}
+String Sonos_Bedroom_Current_Title      "Bedroom current title [%s]"    (Audio, Sonos, AudioBedroom, Bedroom, Bedroom1)       {sonos="[bedroom:currenttitle]"}
+String Sonos_Bedroom_Current_Artist     "Bedroom current artist [%s]"   (Audio, Sonos, AudioBedroom, Bedroom, Bedroom1)       {sonos="[bedroom:currentartist]"}
+String Sonos_Bedroom_Current_Album      "Bedroom current album [%s]"    (Audio, Sonos, AudioBedroom, Bedroom, Bedroom1)       {sonos="[bedroom:currentalbum]"}
